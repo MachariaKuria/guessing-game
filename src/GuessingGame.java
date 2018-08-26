@@ -12,13 +12,16 @@ public class GuessingGame {
 		System.out.println("Choose a number between 1 and 10: ");
 		int guessedNumber = input.nextInt();
 		
+		String result;
 		if(secretNumber == guessedNumber) {
-			System.out.println("You guessed it!");
+			result ="You won!";
 		}
 		else {
-			System.out.println("Sorry you LOSE!!!");
+			result="Sorry you Lost!!!";
 		}
 		
+		System.out.println(result);
+		input.close();
 	}
 
 }
